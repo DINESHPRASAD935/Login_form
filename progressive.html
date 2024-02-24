@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File compressor</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .container {
+            position: relative;
+            max-width: 500px;
+            height: 150px;
+            margin: 300px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .progress-bar {
+            height: 5px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar .fill {
+            height: 100%;
+            background-color: #4CAF50;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info span {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .cancel-button {
+            position: absolute; 
+            bottom: 20px; 
+            right: 20px; 
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>File Mickey --Compressing</h1>
+        </div>
+        <div class="info">
+            <span>Compressing file 1 of 5</span>
+            <span>File name: mickey.zip</span>
+        </div>
+        <div class="progress-bar">
+            <div class="fill" style="width: 20%;"></div>
+        </div>
+        <div>
+            <button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
