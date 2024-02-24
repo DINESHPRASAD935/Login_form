@@ -1,25 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File compressor</title>
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         body {
-            font-family: sans-serif;
+
             margin: 0;
             padding: 0;
-            background-color: #000;
+            background-color: #ffff;
         }
 
         .container {
-            position: relative;
-            max-width: 500px;
-            height: 150px;
-            margin: 300px auto;
-            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            min-width: 500px;
+            height: 200px;
+            margin: 0px auto;
+
             border-radius: 5px;
             padding: 20px;
+            background-color: rgba(195, 193, 193, 0.58);
         }
 
         .header {
@@ -35,15 +46,15 @@
         }
 
         .progress-bar {
-            height: 5px;
-            background-color: #ddd;
+            height: 12px;
+            background-color: #454545;
             border-radius: 5px;
             overflow: hidden;
         }
 
         .progress-bar .fill {
             height: 100%;
-            background-color: #4CAF50;
+            background-color: #009dff;
             transition: width 0.5s ease-in-out;
         }
 
@@ -62,14 +73,17 @@
         }
 
         .cancel-button {
-            position: absolute; 
-            bottom: 20px; 
-            right: 20px; 
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
             background-color: #fff;
             color: #000;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -87,4 +101,5 @@
         </div>
     </div>
 </body>
+
 </html>
