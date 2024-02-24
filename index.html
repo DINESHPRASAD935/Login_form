@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>File Compression Tool</title> 
+    <link rel="stylesheet" href="style.css">
+
+</head> 
+<body> 
+    <div class="section"> 
+        <div class="container"> 
+            <div class="input-group"> 
+                <label for="source">Source Path:</label> 
+                <label class="ip"> 
+                    <div class="file-div"> 
+                        <input type="file" id="source" name="source" accept=".pdf,.zip, .pdf/*" multiple directory> 
+                    </div> 
+                    <div class="upload-btn">....</div> 
+                </label> 
+                <div id="source-path"></div> 
+            </div> 
+            <div class="input-group"> 
+                <label for="save-settings">Save Settings:</label> 
+                <select id="save-settings"> 
+                    <option value="replace">Replace Original File</option> 
+                    <option value="copy">Compress and Save Copy in destination Path</option> 
+                </select> 
+            </div> 
+            <div class="input-group"> 
+                <label for="destination">Destination Path:</label> 
+                <label class="ip"> 
+                    <div class="file-div"> 
+                        <input type="file" id="destination" name="destination" webkitdirectory directory multiple> 
+                    </div> 
+                    <div class="upload-btn">....</div> 
+                </label> 
+                <div id="destination-path"></div> 
+            </div> 
+            <div class="input-group"> 
+                <label for="compress-settings">Compression Settings:</label> 
+                <select id="compress-settings"> 
+                    <option value="basic">Basic</option> 
+                    <option value="strong">Strong</option> 
+                    <option value="balanced">Balanced</option> 
+                </select> 
+            </div> 
+        </div> 
+        <div class="footer"> 
+            <p>Total Files: <span id="total-files">0</span></p> 
+            <p>Total Size: <span id="total-size">0 MB</span></p> 
+        </div> 
+        <div class="actions"> 
+            <button id="back">Back</button> 
+            <button id="compress">Compress</button> 
+            <button id="exit">Exit</button> 
+        </div> 
+        
+    </div> 
+    <script rel="text/javascript" src="script.js"></script>
+</body> 
+</html>
